@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+a {
+  color: #0077c2;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  background-color: #0077c2;
+  color: #fff;
+}
+
+button:hover {
+  background-color: #005ea3;
+}
+
+/* App.css */
+.App.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.App.dark {
+  background-color: #000000;
+  color: #ffffff;
+}

@@ -1,0 +1,116 @@
+.book-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.book-list-counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-left: 50px;
+}
+
+.search-result-count {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.book-list-elem {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  justify-items: center;
+}
+
+.book-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.book-card img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.book-card h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.book-card p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.book-load-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.load-more {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.no-search {
+  position: absolute;
+  top: 40%;
+  left: 51%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 32px;
+}
+
+/* Styles for screens with a maximum width of 1980px */
+@media only screen and (max-width: 1980px) {
+  .book-list-elem {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Styles for screens with a maximum width of 1024px */
+@media only screen and (max-width: 1024px) {
+  .book-list-elem {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Styles for screens with a maximum width of 768px */
+@media only screen and (max-width: 768px) {
+  .book-list-elem {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Styles for screens with a maximum width of 480px */
+@media only screen and (max-width: 480px) {
+  .book-list-elem {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Styles for screens with a maximum width of 320px */
+@media only screen and (max-width: 320px) {
+  .book-list-elem {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .no-search {
+    font-size: 1rem;
+  }
+}
